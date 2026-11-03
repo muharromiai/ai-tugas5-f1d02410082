@@ -1,0 +1,52 @@
+{
+  "judul": "Sistem Pakar Diagnosis Gangguan Printer",
+  "batas": "Aturan berdasarkan panduan troubleshooting resmi Epson dan Canon",
+  "sumber": {
+    "S1": "Epson Official Support Manual – Printer Maintenance & Troubleshooting Guide",
+    "S2": "Canon Knowledge Base – Error Codes and Paper Jam Resolution"
+  },
+  "rules": [
+    {
+      "id": "R1",
+      "if": ["lampu tinta berkedip bergantian", "printer mendeteksi masa pakai komponen habis"],
+      "mode": "atau",
+      "then": "absorber tinta penuh",
+      "sumber": "S1"
+    },
+    {
+      "id": "R2",
+      "if": ["absorber tinta penuh", "printer menolak mencetak"],
+      "mode": "dan",
+      "then": "perlu reset waste ink pad",
+      "sumber": "S1"
+    },
+    {
+      "id": "R3",
+      "if": ["hasil cetak bergaris putih", "warna cetak tidak sesuai"],
+      "mode": "dan",
+      "then": "printhead tersumbat",
+      "sumber": "S1"
+    },
+    {
+      "id": "R4",
+      "if": ["printhead tersumbat", "sudah dilakukan cleaning standar gagal"],
+      "mode": "dan",
+      "then": "perlu deep cleaning manual",
+      "sumber": "S2"
+    },
+    {
+      "id": "R5",
+      "if": ["kertas ditarik miring", "kertas tidak mau masuk sama sekali"],
+      "mode": "atau",
+      "then": "roller kertas kotor atau aus",
+      "sumber": "S2"
+    },
+    {
+      "id": "R6",
+      "if": ["roller kertas kotor atau aus", "ada benda asing di jalur kertas"],
+      "mode": "dan",
+      "then": "perlu pembersihan mekanis jalur kertas",
+      "sumber": "S2"
+    }
+  ]
+}
