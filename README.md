@@ -31,11 +31,11 @@
 - **Alasan:** Metode Forward Chaining cocok digunakan untuk kasus troubleshooting. Prosesnya dimulai dengan mengumpulkan fakta-fakta berupa gejala yang sedang dialami oleh pengguna, kemudian sistem merangkai fakta-fakta tersebut ke depan untuk mencocokkannya dengan aturan guna menghasilkan kesimpulan jenis kerusakan dan solusi yang sesuai.
 
 ## Kasus Uji
-![Kasus uji 1](~/ai-tugas5-f1d02410082/screenshot/kasus1.png)
+![Kasus uji 1](screenshot/kasus1.png)
 --------------------------------------------------------------
-![Kasus uji 2](~/ai-tugas5-f1d02410082/screenshot/kasus2.png)
+![Kasus uji 2](screenshot/kasus2.png)
 --------------------------------------------------------------
-![Kasus uji 3](~/ai-tugas5-f1d02410082/screenshot/kasus3.png)
+![Kasus uji 3](screenshot/kasus3.png)
 
 ## Penggunaan Alat Bantu AI
 Pembuatan sistem pakar ini dibantu oleh AI Gemini untuk:
