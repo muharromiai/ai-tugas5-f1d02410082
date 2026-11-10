@@ -17,6 +17,7 @@
 
 ## Tabel Aturan
 | Aturan | IF | Mode | THEN | Sumber |
+| --- | --- | --- | --- | --- |
 | R1 | lampu tinta berkedip bergantian OR printer mendeteksi masa pakai komponen habis | ATAU | absorber tinta penuh | S1 |
 | R2 | absorber tinta penuh AND printer menolak mencetak | DAN | perlu reset waste ink pad | S1 |
 | R3 | hasil cetak bergaris putih AND warna cetak tidak sesuai | DAN | printhead tersumbat | S1 |
